@@ -8,7 +8,7 @@ namespace RandomNumGame.Infrastructure.Implementations
 {
     public class UsersScoreRepository : IUsersScoreRepository
     {
-        private string _filePath;
+        private readonly string _filePath;
         public UsersScoreRepository(string filePath) 
         {
             _filePath = filePath;

@@ -10,7 +10,7 @@ namespace RandomNumGame.Core.Strategies
         public static string ManualTypeKey = "manual";
         private enum StrategyType { Auto, Manual }
         
-        private IConfiguration _confuguration;
+        private readonly IConfiguration _confuguration;
 
         public StrategyCreator(IConfiguration confuguration)
         {

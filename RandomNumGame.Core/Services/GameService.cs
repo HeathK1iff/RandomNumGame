@@ -6,7 +6,7 @@ namespace RandomNumGame.Core.Services
 {
     public class GameService : IGameService
     {
-        private IAskQuestionGameBuilder _builder;
+        private readonly IAskQuestionGameBuilder _builder;
         private int _statTotalGames;
         private int _statSuccessGames;
 

@@ -11,9 +11,9 @@ namespace RandomNumGame.Core
         public static string RoundAttempKey = "roundAttemp";
         public static int DefaultRoundAttempt = 3;
 
-        private INumberGameStrategy _gameStrategy;
+        private readonly INumberGameStrategy _gameStrategy;
+        private readonly int _attemptCount;
         private int _attempt;
-        private int _attemptCount;
 
         public NumberGameBuilder(IConfiguration configuration, IStrategyCreator strategyCreator)
         {

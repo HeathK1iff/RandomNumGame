@@ -8,7 +8,7 @@ namespace RandomNumGame.Core.Services
     {
         public static string AdminUserName = "admin";
 
-        private IUsersScoreRepository _repository;
+        private readonly IUsersScoreRepository _repository;
 
         public UserService(IUsersScoreRepository repository)
         {

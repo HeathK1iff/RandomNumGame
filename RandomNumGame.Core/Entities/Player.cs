@@ -4,8 +4,8 @@ namespace RandomNumGame.Core.Entities
 {
     public class Player: User, IScorable
     {
-        private int _success;
-        private int _fail;
+        private readonly int _success;
+        private readonly int _fail;
 
         public Player(int success, int fail): this()
         {

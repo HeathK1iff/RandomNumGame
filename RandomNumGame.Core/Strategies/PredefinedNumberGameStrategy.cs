@@ -8,7 +8,7 @@ namespace RandomNumGame.Core.Strategies
         public static string StartRangeKey = "StartRange";
         public static string EndRangeKey = "EndRange";
 
-        private IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
 
         public PredefinedNumberGameStrategy(IConfiguration configuration)
         {
